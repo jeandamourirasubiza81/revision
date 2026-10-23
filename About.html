@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About-Jean</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+
+        }
+        body{
+            background-color: rgb(7, 78, 78);
+            font-family: Arial, Helvetica, sans-serif;
+            color: #ffffff;
+        }
+        .navbar{
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 60px;
+        }
+        .logo{
+            color: #F75702;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .nav-link {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+        }
+        .nav-link a{
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 18px;
+        }
+        .nav-link a:hover{
+            color: #F75702;
+        }
+        .about{
+         padding: 60px 8%;
+         
+
+        }
+        .about-contact{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 100px;
+        }
+        
+       .image {
+        width: 300px;
+        height: 300px;
+        flex-shrink: 0;
+         border: 3px solid #F75702;
+         border-radius: 50%;
+         position: relative;
+        box-shadow: 0 0 50px rgba(253, 92, 5, 0.3);
+        overflow: hidden;
+        transition: 0.4s ease;
+       }
+
+      .image img {
+       width: 100%;
+       height: 100%;
+       object-fit: contain;
+       display: block;
+       }
+
+      .image:hover {
+      box-shadow: 0 0 30px rgba(247, 87, 2, 0.6);
+      transform: scale(1.03);
+      }
+
+        .about-page{
+            max-width: 600px;
+        }
+        h2{
+            color: #ffffff;
+            font-size: 32px;
+            margin-bottom: 15px;
+        }
+        span{
+            color: #F75702;
+        }
+        h3{
+              font-size: 24px;
+              margin-bottom: 15px;
+        }
+        p{
+            color:white;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+        .button{
+            margin-left:- 20px ;
+            padding: 21px;
+                
+        }
+        .btn{
+            background-color: transparent;
+            border: 2px solid #F75702;
+            border-radius: 6px;
+            text-decoration: none;
+            padding: 13px 24px;
+            color: #ffffff;
+            transition: 0.3s;
+        }
+        .btn:hover{
+            background-color: #F75702;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">JD</div>
+        <ul class="nav-link">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./About.html">About</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Login</a></li>
+        </ul>
+
+    </nav>
+    <section class="about">
+
+        <div class="about-contact">
+            <div class="image">
+                <img src="./image_aeabfa80__1_-removebg-preview.png" alt="">
+            </div>
+
+            <div class="about-page">
+                <h2>About <span>Me</span></h2>
+                <h3>Front-End Developer</h3>
+                <p>
+                    Hello! My name is Jean d'Amour.
+                    I am learning web development and how to
+                    create moder and responsive website.
+                    I enjoy learning HTML,CSS and Javascript.
+                    My goal is to become a professional web developer
+                </p>
+
+                <div class="button">
+                <a href="#contact" class="btn">Contact Me</a>
+               </div>
+
+            </div>
+        </div>
+
+    </section>
+</body>
+</html>
