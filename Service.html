@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service-Jean d'Amour</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            background-color: rgb(7, 78, 78);
+        }
+        .navbar{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 60px;
+            
+        }
+        .logo{
+            font-size: 32px;
+            color: #F75702;
+            font-weight: bold;
+        }
+        .nav-link {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+        }
+        .nav-link a{
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 18px;
+            
+        }
+        .nav-link a:hover{
+            color: #F75702;
+            transition: 0.3s;
+           
+        }  
+
+        .Service {
+         text-align: center;
+          padding: 60px 20px;
+        }
+
+        .Service h1 {
+           font-size: 40px;
+           margin-bottom: 15px;
+        }
+
+       .Service h1 span {
+        color: #F75702;
+        }
+
+       .Service > p {
+        margin-bottom: 40px;
+       }
+
+        .service-contain {
+            display: flex;
+            justify-content: center;
+             flex-wrap: wrap;
+             gap: 25px;
+          }
+
+
+     
+      .card {
+        position: relative;
+          width: 280px;
+         min-height: 220px;
+         padding: 35px 20px;
+        background: #0c4444;
+         border: 3px solid rgba(237, 235, 235, 0.2);
+         border-radius: 12px;
+         cursor: pointer;
+        overflow: hidden;
+        transition: 0.3s;
+        }
+
+        .card:hover {
+         border-color: #F75702;
+         transform: translateY(-5px);
+         }
+
+           .card i {
+           color: #F75702;
+           font-size: 40px;
+           margin-bottom: 15px;
+           }
+
+           .card h3 {
+            margin-bottom: 10px;
+              }
+
+           /* Popup */
+            .popup-text {
+             position: absolute;
+
+              /* Isiga umwanya muto kuri border */
+             top: 6px;
+             left: 6px;
+             right: 6px;
+             bottom: 6px;
+
+             display: flex;
+             flex-direction: column;
+             justify-content: center;
+             align-items: center;
+
+             padding: 20px;
+             border-radius: 8px;
+             background: white;
+             color: #1daeae;
+             text-align: center;
+
+            /* Itangirira hasi */
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+            transform: translateY(100%);
+            transition:
+            transform 0.4s ease,
+            opacity 0.4s ease,
+            visibility 0.4s ease;
+
+           z-index: 2;
+          }
+
+             .popup-text h3 {
+             color: #F75702;
+             margin-bottom: 10px;
+           }
+
+           .popup-text p {
+               line-height: 1.6;
+          }
+
+          /* Popup izamuka iyo mouse igeze kuri card */
+            .card:hover .popup-text {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        @media (max-width: 600px) {
+         .card {
+          width: 100%;
+          max-width: 320px;
+         }
+           }
+
+
+
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">JD</div>
+        <ul class="nav-link">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./About.html">Abouts</a></li>
+            <li><a href="./Service.html">Service</a></li>
+            <li><a href="Portfolio.html">Portfolio</a></li>
+            <li><a href="./contact.html">Contacts</a></li>
+            <li><a href="./login.html">Login</a></li>
+            
+        </ul>
+    </nav>
+    <section class="Service">
+         
+        <h1>Our <span>Service</span></h1>
+          <p>what con provide to do</p> 
+        <div class="service-contain">
+     
+        
+        <div class="card">
+
+        <i class="fa-solid fa-pen-ruler"></i>
+       <h3>UX/UI Design</h3>
+      <p>I create attractive designs.</p>
+
+
+      <div class="popup-text">
+        <h3>UX/UI Design</h3>
+        <p>
+            I design beautiful, simple, and user-friendly
+            website interfaces.
+        </p>
+         </div>
+
+        </div>
+
+
+    <div class="card">
+    <i class="fa-solid fa-code"></i>
+
+    <h3>Web Developer</h3>
+    <p>I build modern websites.</p>
+
+    <div class="popup-text">
+        <h3>Web Development</h3>
+        <p>
+            I build responsive websites using HTML,
+            CSS, and JavaScript.
+        </p>
+     </div>
+    </div>
+
+
+     <div class="card">
+    <i class="fa-solid fa-bullhorn"></i>
+
+    <h3>Digital Marketing</h3>
+    <p>I promote services online.</p>
+
+    <div class="popup-text">
+        <h3>Digital Marketing</h3>
+        <p>
+            I help businesses promote their products
+            and services online.
+        </p>
+      </div>
+     </div>
+
+        </div>
+
+    </section>
+</body>
+</html>

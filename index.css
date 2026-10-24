@@ -33,6 +33,7 @@ body{
 }
 .nav-link a:hover{
     color:#F75702;
+    transition: 0.3s;
 }
 .home{
     min-height: 85vh;
