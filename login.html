@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <style>
+    *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+     }
+     body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    background-color:rgb(7, 78, 78);
+    }
+     .navbar{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 20px 60px;
+     }
+
+
+    .logo{
+     font-size: 30px;
+      color:#F75702;
+      font-weight: bold;
+      }
+     .nav-link{
+      display: flex;
+      list-style: none;
+      gap:25px;
+      }
+    .nav-link a{
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 18px;
+      }
+      .nav-link a:hover{
+        color:#F75702;
+        transition: 0.3s;
+      } 
+
+        .login {
+            width: 600px;
+            max-width: 90%;
+            padding: 35px;
+            background: #0c4444;
+            border: 5px solid rgba(15, 176, 187, 0.25);
+            border-radius: 20px;
+            text-align: center;
+            margin: 50px auto;
+        }
+
+        .login h2 {
+            color: #f95e0a;
+            font-size: 30px;
+            margin-bottom: 8px;
+        }
+
+        .welcom {
+            margin-bottom: 25px;
+        }
+
+        .welcom span,
+        .welcom b {
+            color: #fb600d;
+        }
+
+        .welcom b,
+        .welcom em {
+            font-size: 25px;
+        }
+
+        .welcom i {
+            font-style: normal;
+        }
+
+        .welcom em {
+            color: #03b3f8;
+            font-style: normal;
+            font-weight: bold;
+        }
+
+        .input {
+            width: 100%;
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        .label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .input input {
+            width: 100%;
+            padding: 13px 15px;
+            border: 1px solid #382d2d;
+            border-radius: 8px;
+            outline: none;
+            font-size: 14px;
+        }
+
+        .input input:focus {
+            border-color: #f85f0d;
+        }
+
+        .password-box {
+            position: relative;
+        }
+
+        .password-box input {
+            padding-right: 45px;
+        }
+
+        .password-box i {
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #f85f0c;
+            cursor: pointer;
+        }
+
+        .loginbtn {
+            width: 100%;
+            padding: 13px;
+            border: none;
+            border-radius: 8px;
+            background: #f85f0c;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .loginbtn:hover {
+            background: white;
+            color: #fb5902;
+        }
+
+        button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+
+        .loginmessage {
+            display: none;
+            margin: 12px 0;
+            padding: 10px;
+            border-radius: 8px;
+            font-size: 14px;
+            line-height: 1.6;
+            overflow-wrap: anywhere;
+        }
+
+        .divide {
+            display: flex;
+            align-items: center;
+            margin: 25px 0;
+        }
+
+        .divide::before,
+        .divide::after {
+            content: "";
+            flex: 1;
+            height: 1px;
+            background: white;
+        }
+
+        .divide span {
+            margin: 0 10px;
+        }
+
+        .googlelogin {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            background:  #ff5900;
+            cursor: pointer;
+            color:white;
+            font-size: 14px;
+        }
+        .googlelogin i:hover{
+            color: #ff5900;
+            background: white; 
+        }
+
+        .googlelogin i {
+            margin-right: 10px;
+            color: #0665fe;
+        }
+
+        .forgot-password {
+            display: flex;
+            justify-content: flex-end;
+            margin: 8px 0 18px;
+        }
+
+        .forgot-password a {
+                        
+            color: white;
+            padding: 10px 12px;
+            border-radius: 10px;
+            background: #f55f0d;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .forgot-password:hover {
+            color: white;
+            background-color: transparent;
+
+        }
+
+        .signup {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        .signup a {
+            color: #f95903;
+            text-decoration: none;
+            font-weight: bold;
+        }
+</style>
+
+</head>
+<body>
+ <nav class="navbar">
+        <div class="logo">JD</div>
+        <ul class="nav-link">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./About.html">Abouts</a></li>
+            <li><a href="./Service.html">Service</a></li>
+            <li><a href="./Portfolio.html">Portfolio</a></li>
+            <li><a href="./contact.html">Contacts</a></li>
+            <li><a href="./login.html">Login</a></li>
+        </ul>
+    </nav>
+
+
+    <section class="login">
+
+    <h2>Login</h2>
+
+    <p class="welcom">
+        Welcome <span>back</span>!
+        <b>J</b>.<i>D</i>.<em>I</em>
+    </p>
+
+    <form class="loginform">
+
+        <div class="input">
+            <label for="loginemail" class="label">Email:</label>
+
+            <input
+                type="email"
+                id="loginemail"
+                placeholder="Email"
+                autocomplete="email"
+                required
+            >
+        </div>
+
+        <div class="input">
+            <label for="loginpassword" class="label">Password:</label>
+
+            <div class="password-box">
+                <input
+                    type="password"
+                    id="loginpassword"
+                    placeholder="Password"
+                    autocomplete="current-password"
+                    required
+                >
+
+                <i
+                    class="fa-solid fa-eye"
+                    id="togglePassword"
+                    role="button"
+                    tabindex="0"
+                    aria-label="Show password"
+                ></i>
+            </div>
+        </div>
+
+        <button type="submit" class="loginbtn">
+            Login
+        </button>
+
+        <p class="loginmessage" aria-live="polite"></p>
+    </form>
+
+    <div class="forgot-password">
+        <a href="#" id="forgotPasswordLink">
+            Forgot Password?
+        </a>
+    </div>
+
+    <div class="divide">
+        <span>or</span>
+    </div>
+
+    <button type="button" class="googlelogin" id="googleLoginBtn">
+        <i class="fa-brands fa-google"></i>
+        Login with Google
+    </button>
+
+    <p class="signup">
+        Don't have an account?
+        <a href="./Sign up.html">Sign up</a>
+    </p>
+
+</section>
+
+</body>
+</html>
